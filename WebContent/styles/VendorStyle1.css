@@ -1,0 +1,176 @@
+body {
+	margin: 0px;
+}
+
+body, input, table {
+	font-family: Arial,sans-serif;
+	font-size: 14px;
+}
+
+a, a:visited {
+	color: #0ea096;
+	text-decoration: none;
+}
+
+.highlight {
+	color: #0ea096;
+}
+
+h1 {
+	font-family: tahoma;
+	font-size: 28px;
+	padding: 20px;
+	color: white;
+}
+
+.div-header {
+	background-color: lightblue;
+	background: lightblue; /* For browsers that do not support gradients */
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	box-shadow: 0px 1px 4px #888888;
+	margin-top: -20px;
+}
+
+.div-content {
+	width: 99%;
+	margin: 1%;
+}
+
+.div-column {
+	float: left;
+}
+
+.div-column.col-left {
+	width: 42%;
+	margin-right: 3%;
+}
+
+.div-column.col-right {
+	width: 54%;
+}
+
+.div-title {
+	padding-bottom: 4px;
+	border-bottom: 1px solid #a2a2a2;
+	font-size: 20px;
+}
+.div-controls {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.div-controls label {
+	width: 100px;
+	font-weight: bold;
+	display: inline-block;
+}
+
+.div-controls input[type="text"], input[type="password"] {
+	width: 200px;
+	padding: 3px;
+}
+
+.btn {
+	text-align: center;
+    border: 0;
+    color: black;
+    font-size: 14px;
+    padding: 10px 25px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.btn.btn-submit {
+	background-color: rgb(221, 75, 57);
+    color: rgb(255, 255, 255);
+}
+
+.btn-submit:hover {
+	background-color: #fe6a48!important;
+}
+
+.btn-default:hover {
+	background-color: #e2e2e2!important;
+}
+
+.ul-links {
+	margin-left: 0px;
+	padding-left: 0px;
+}
+
+.link-item {
+	margin-top: 10px;
+	margin-bottom: 15px;
+}
+
+.link-item i.fa {
+	display: inline-block;
+	width: 18px;
+}
+
+.content-block {
+	margin-bottom: 30px;
+	margin-top: 15px;
+}
+
+.link-item p {
+	font-size: 12px;
+    color: #666;
+    margin-left: 22px;
+    margin-top: 5px;
+}
+.table-info {
+	border-collapse: collapse;
+}
+.table-info td {
+	padding: 10px;
+	padding-left: 0px;
+}
+footer {
+	background: #222;
+	color: white;
+	margin-top: 50px;
+	border-top: 3px solid #0ea096;
+}
+
+footer div {
+	padding: 50px 20px;
+}
+
+.backtohome {
+	position: fixed;
+    right: 0px;
+    bottom: 10px;
+    display: block;
+    background: #ccc;
+    opacity: 0.6;
+    border-radius: 4px;
+    padding: 8px;
+    font-size: 15px;
+    color: red !important;
+}
+
+#toTop {
+   display: block;
+   position: fixed;
+   top: 70%;
+   right: 0;
+   padding: 10px;
+   height: 99px;
+   width: 81px;
+   background: url('WEB-15-068_rev03.gif') no-repeat scroll 0 0 transparent;
+ }
+ 
+ #toDown {
+   display: block;
+    position: fixed;
+    top: 8%;
+    right: 0;
+    padding: 4px;
+    height: 81px;
+    width: 81px;
+    background: url(down.png) no-repeat scroll 0 0 transparent;
+    background-size: 60px;
+ }

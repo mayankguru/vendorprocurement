@@ -1,0 +1,88 @@
+$(document).ready(function() {
+	$('body').append('<a id="toTop" href="#"></a>');
+	$('body').append('<a id="toDown" href="#"></a>');
+	// Hide the toTop button when the page loads.
+
+	$("#toTop").css("display", "none");
+	
+	var windowheight = $(document).height();
+
+	// This function runs every time the user scrolls the page.
+
+	$(window).scroll(function() {
+
+		// Check weather the user has scrolled down (if "scrollTop()"" is more
+		// than 0)
+		
+		if ($(window).scrollTop() == 0) {
+			$("#toDown").fadeIn("slow");
+		}
+
+		if ($(window).scrollTop() > 0) {
+
+			// If it's more than or equal to 0, show the toTop button.
+
+			console.log("is more");
+
+			$("#toTop").fadeIn("slow");
+			
+			
+
+		}
+
+		else {
+
+			// If it's less than 0 (at the top), hide the toTop button.
+
+			console.log("is less");
+
+			$("#toTop").fadeOut("slow");
+
+		}
+	});
+
+	// When the user clicks the toTop button, we want the page to scroll to the
+	// top.
+
+	$("#toTop").click(function() {
+
+		// Disable the default behaviour when a user clicks an empty anchor
+		// link.
+
+		// (The page jumps to the top instead of // animating)
+
+		event.preventDefault();
+
+		// Animate the scrolling motion.
+
+		$("html, body").animate({
+
+			scrollTop : 0
+
+		}, "slow");
+
+	});
+	
+	
+	$("#toDown").click(function() {
+
+		// Disable the default behaviour when a user clicks an empty anchor
+		// link.
+
+		// (The page jumps to the top instead of // animating)
+
+		event.preventDefault();
+
+		// Animate the scrolling motion.
+
+		$("html, body").animate({
+
+			scrollTop : windowheight
+
+		}, "slow");
+		
+		$("#toDown").fadeOut("slow");
+
+	});
+
+});

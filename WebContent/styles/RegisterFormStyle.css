@@ -1,0 +1,61 @@
+.div-controls label {
+	width: 250px;
+}
+
+.div-controls input[type="text"], input[type="password"] {
+	width: 500px;
+}
+
+.div-controls select {
+	width: 510px;
+}
+
+.div-controls select {
+	padding: 3px;
+	font-family: Arial,sans-serif;
+	font-size: 14px;
+}
+.div-controls label {
+	vertical-align: top;
+}
+.control-group {
+	display: inline-block;
+}
+
+.control-group label {
+	display: block;
+	margin-bottom: 8px;
+	width: 100%;
+	font-weight: normal;
+}
+.control-group label:last-child {
+	margin-bottom: 0px;
+}
+.div-controls-line {
+	font-size: 17px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ccc;
+	width: 760px;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	color: #1b809e;
+}
+
+.div-controls-subline {
+	font-size: 15px;
+	padding-bottom: 3px;
+	border-bottom: 1px solid #ccc;
+	width: 760px;
+	color: #1b809e;
+}
+
+.lbl-required {
+	font-weight: bold;
+	color: red;
+}
+
+.divdatepicker:after {
+	content: "\f073";
+	font: normal normal normal 14px/1 FontAwesome;
+	margin-left: -25px;
+}
